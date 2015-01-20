@@ -4,12 +4,13 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I'm a developer interested in the intersection of art and code.  
+Professionally, I've worked as a full stack web developer using Javascript and Ruby.  
+In a previous life, I was a Flash developer.
 
-### More Information
+I have a BFA in computer art from the State University of New York at Buffalo.
 
-A place to include any other types of information that you'd like to include about yourself. 
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+emilng at alphabeticaldisorder dot com

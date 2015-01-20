@@ -19,13 +19,13 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
+  font: 17px/1.4 $helvetica;
   color: $darkGray;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 600px;
   padding: 0 10px;
   width: 100%;
 }
@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 
   line-height: 1.7;
-  margin: 1em 0 15px;
+  margin: 1.1em 0 0.1em;
   padding: 0;
 
   @include mobile {
@@ -65,7 +65,7 @@ h4 {
 }
 
 p {
-  margin: 15px 0;
+  margin: 0 0;
 }
 
 a {
@@ -83,7 +83,7 @@ ul, ol {
 }
 
 ul {
-  list-style-type: disc;
+  list-style-type: none;
 }
 
 ol {
@@ -95,11 +95,12 @@ ol ul, ul ol, ul ul, ol ol {
 }
 
 ul ul, ol ul {
-  list-style-type: circle;
+  list-style-type: none;
 }
 
 em, i {
   font-style: italic;
+  color: #gray;
 }
 
 strong, b {
@@ -113,6 +114,7 @@ img {
 .date {
   font-style: italic;
   color: $gray;
+  margin-top: -5px;
 }
 
 // Specify the color of the selection
@@ -248,12 +250,14 @@ nav {
 
 .post {
   blockquote {
-    margin: 1.8em .8em;
-    border-left: 2px solid $gray;
-    padding: 0.1em 1em;
-    color: $gray;
-    font-size: 22px;
+    margin: 0.4em -14em;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    padding: 1em 1em 1em 1em;
+    color: #777;
+    font-size: 16px;
     font-style: italic;
+    float: left;
   }
 
   .comments {
