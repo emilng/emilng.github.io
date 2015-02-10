@@ -66,7 +66,7 @@ You can play around with the tree L-System above <a href="http://emilng.github.i
 >The code is much clearer 
 and cleaner now
 
-The UI has been rewritten with React. The code is much clearer and cleaner now. I've also managed to figure out how to handle some more nuanced interaction behaviours that I've never dealt with before. I presented this project on during Thursday presentations and I think it went well. The remaining work on this project is to polish interactions. It's probably at 80 or 90 percent complete, but the saying goes that it takes 80 percent of the time to finish the last 20 percent of the work.  
+The UI has been rewritten with React. The code is much clearer and cleaner now. I've also managed to figure out how to handle some more nuanced interaction behaviors that I've never dealt with before. I presented this project during Thursday presentations and I think it went well. The remaining work on this project is to polish interactions. It's probably at 80 or 90 percent complete, but the saying goes that it takes 80 percent of the time to finish the last 20 percent of the work.  
 <br>
 You can play around with the above L-System <a href="http://emilng.github.io/l-systems/index.html#F/F:F+F-F-FF/F,d3.8;+,a164.7;-,a-79.64/6/x78,y285,a151,i5">here</a>
 
