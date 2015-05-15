@@ -254,6 +254,14 @@ nav {
   border-bottom: none;
 }
 
+.posts-title {
+  float: left;
+}
+
+.posts-date {
+  float: right;
+}
+
 .post {
   blockquote {
     margin: 0.4em -14em;
@@ -275,6 +283,33 @@ nav {
     text-transform: uppercase;
     font-size: 15px;
   }
+}
+
+.project-container {
+  margin: 10px 0 24px;
+}
+
+.project-title {
+  font-size: 18px;
+  font-weight: bold;
+  clear: left;
+}
+
+.project-icon {
+  float: left;
+  clear: right;
+  border-radius: 0 0 5px 5px;
+  vertical-align: top;
+  margin-right: 10px;
+}
+
+.project-description {
+  font-size: 14px;
+}
+
+.project-source {
+  float: right;
+  font-size: 12px;
 }
 
 .wrapper-footer {
