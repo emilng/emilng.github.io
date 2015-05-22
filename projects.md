@@ -13,7 +13,7 @@ permalink: /projects/
 
 <div class="project-container clearfix">
   <div class="project-title"><a href="http://emilng.github.io/synth/" target="_blank">Synth</a><span class="project-source">[<a href="https://github.com/emilng/synth" target="_blank">source</a>]</span></div>
-  <a href="http://emilng.github.io/synth/" target="_blank"><img class="project-icon" src="/images/synth_icon.png"></a><div class="project-description">A basic web audio synthesizer with visualizer and adjustable volume envelope.</div>
+  <a href="http://emilng.github.io/synth/" target="_blank"><img class="project-icon" src="/images/synth_icon.png"></a><div class="project-description">A basic web audio synthesizer with visualizer rendered in canvas and an SVG adjustable volume envelope.</div>
 </div>
 
 <div class="project-container clearfix">
