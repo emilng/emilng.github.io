@@ -15,6 +15,9 @@ avatar: /images/avatar.jpeg
 # Flags below are optional
 #
 
+collections:
+  - projects
+
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
@@ -67,7 +70,7 @@ gems:
 
 # Exclude these files from your production _site
 exclude:
-    - Gemfile
-    - Gemfile.lock
-    - LICENSE
-    - README.md
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
