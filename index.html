@@ -5,13 +5,14 @@ layout: default
 <h2>Projects</h2>
 
 {% for project in site.projects %}
+  {% capture titleid %}title{{ forloop.index }}{% endcapture %}
   <div class="project-container">
     <div class="project-icon-container">
-      <a href="{{ project.link }}" target="_blank"><img class="project-icon" src="{{ project.icon }}"></a>
+      <a href="{{ project.link }}" target="_blank" ><img class="project-icon" src="{{ project.icon }}" alt="{{ project.title }}"></a>
     </div><div class="project-text-container">
-      <div class="project-title">
-        <a href="{{ project.link }}" target="_blank">{{ project.title }}</a>
-        <span class="project-source">[<a href="{{ project.source }}" target="_blank">source</a>]</span>
+      <div class="project-title" >
+        <a href="{{ project.link }}" target="_blank" id="{{ titleid }}">{{ project.title }}</a>
+        <span class="project-source">[<a href="{{ project.source }}" target="_blank" aria-describedby="{{ titleid }}">source</a>]</span>
       </div>
       <div class="project-description">{{ project.content }}</div>
     </div>
