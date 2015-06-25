@@ -7,6 +7,8 @@
 
 @import "_reset";
 @import "_variables";
+@import "_background";
+
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -18,9 +20,21 @@ html {
 }
 
 body {
-	background: $white;
+  @include background;
   font: 400 17px/1.4 $sourceSansPro;
   color: $darkGray;
+  margin: 0;
+  padding: 0;
+}
+
+.column {
+  background: $white;
+  margin: 0 auto;
+  max-width: 640px;
+  padding: 0 40px 50px 40px;
+  width: 100%;
+  box-shadow: 0px 0px 4px 1px #6b96c5;
+  min-height: calc(100vh - 87px);
 }
 
 .container {
@@ -45,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 28px;
   a {
     color: inherit;
   }
@@ -153,48 +167,19 @@ img {
 // .masthead
 //
 
-.wrapper-masthead {
-  margin-bottom: 50px;
-}
-
 .masthead {
-  padding: 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   border-bottom: 1px solid $lightGray;
 
   @include mobile {
-    text-align: center;
-  }
-}
-
-.site-avatar {
-  float: left;
-  width: 70px;
-  height: 70px;
-  margin-right: 15px;
-
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
-
-  img {
-    border-radius: 5px;
-  }
-}
-
-.site-info {
-  float: left;
-
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
 }
 
 .site-name {
-  margin: 0;
   color: $darkGray;
   cursor: pointer;
   font-family: $sourceSansPro;
@@ -214,22 +199,20 @@ img {
 }
 
 nav {
-  float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
+  flex: 0 1 auto;
+  align-self: flex-end;
   font-family: $sourceSansPro;
   font-size: 18px;
+  margin: 1.1em 0;
 
   @include mobile {
-    float: none;
     margin-top: 9px;
-    display: block;
     font-size: 16px;
   }
 
   a {
     margin-left: 20px;
     color: $darkGray;
-    text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
 
@@ -264,15 +247,19 @@ nav {
 
 .post {
   blockquote {
-    margin: 0.4em -14em;
-    border-top: 1px solid #999;
-    border-bottom: 1px solid #999;
+    background: $white;
+    margin: 0.4em -16.5em;
+    box-shadow: 0 0 2px 1px #CECECE;
     padding: 1em 1em 1em 1em;
     color: #777;
     font-size: 16px;
     font-style: italic;
     float: left;
-    width: 13em;
+    width: 12em;
+  }
+
+  img {
+    margin: 0.6em 0 0 0;
   }
 
   .comments {
@@ -290,7 +277,8 @@ nav {
 }
 
 .project-container {
-  display: block;
+  display: flex;
+  flex-direction: row;
   margin: 10px 0 30px 0;
 }
 
@@ -302,6 +290,16 @@ nav {
   width: 80px;
 }
 
+.inline-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.inline-image {
+  flex: 0 1 auto;
+}
+
 .project-icon {
   border-radius: 5px;
   vertical-align: top;
@@ -309,33 +307,61 @@ nav {
 }
 
 .project-text-container {
+  display: flex;
+  flex-direction: row;
   font-family: $sourceSansPro;
   display: inline-block;
   margin: 0 0 0 10px;
-  width: 430px;
+  width: 480px;
 }
 
 .project-title {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
   font-size: 18px;
   font-weight: bold;
 }
 
 .project-description {
   display: block;
-  font-size: 14px;
+  font-size: 16px;
 }
 
-.project-source {
-  float: right;
+.project-links {
   font-size: 12px;
+  font-weight: normal;
+  white-space: nowrap;
+}
+.project-links:before {
+  content: "[";
+}
+.project-links:after {
+  content: "]";
+}
+
+.project-link {
+  padding: 0 0.3em;
+}
+.project-link:not(:first-child):before {
+  content: "|";
+  margin: 0 0.3em 0 0;
+}
+
+.project-tech {
+  font-size: 15px;
+}
+
+.showcase-header {
+  font: italic 17px/1.4 $sourceSansPro;
+  color: $darkGray;
 }
 
 .wrapper-footer {
-  margin-top: 50px;
   border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
   background-color: $lightGray;
+  box-shadow: 0px 1px 3px 0px #CECECE;
 }
 
 footer {

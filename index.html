@@ -5,6 +5,7 @@ layout: default
 <h2>Projects</h2>
 
 {% for project in site.projects %}
+  {{ site.projects.output }}
   {% capture titleid %}title{{ forloop.index }}{% endcapture %}
   <div class="project-container">
     <div class="project-icon-container">
@@ -12,9 +13,20 @@ layout: default
     </div><div class="project-text-container">
       <div class="project-title" >
         <a href="{{ project.link }}" target="_blank" id="{{ titleid }}">{{ project.title }}</a>
-        <span class="project-source">[<a href="{{ project.source }}" target="_blank" aria-describedby="{{ titleid }}">source</a>]</span>
+        <span class="project-links">
+          {% if project.info %}
+          <span class="project-link"> <a href="{{ project.info }}" target="_blank" aria-describedby="{{ titleid }}">more info</a> </span>
+          {% endif %}
+          {% if project.site %}
+          <span class="project-link"> <a href="{{ project.site }}" target="_blank" aria-describedby="{{ titleid }}">site</a> </span>
+          {% endif %}
+          {% if project.source %}
+          <span class="project-link"> <a href="{{ project.source }}" target="_blank" aria-describedby="{{ titleid }}">source</a> </span>
+          {% endif %}
+        </span>
       </div>
       <div class="project-description">{{ project.content }}</div>
+      <div class="project-tech">tech: <em>{{ project.tech }}</em></div>
     </div>
   </div>
 {% endfor %}
