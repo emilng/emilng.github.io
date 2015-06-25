@@ -16,7 +16,10 @@ avatar: /images/avatar.jpeg
 #
 
 collections:
-  - projects
+  projects:
+    output: false
+  showcase:
+    output: true
 
 # Includes an icon in the footer for each username you enter
 footer-links:
