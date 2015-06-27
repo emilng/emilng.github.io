@@ -248,6 +248,11 @@ nav {
 
 .posts-date {
   float: right;
+
+  @include mobile {
+    float: left;
+    margin-bottom: 20px;
+  }
 }
 
 .post {
