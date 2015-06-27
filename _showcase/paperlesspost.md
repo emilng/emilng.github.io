@@ -12,9 +12,9 @@ I was the first full-time employee and was the primary developer working on tool
 ![photo stationery](/images/paperlesspost/photo_stationery.gif)
 
 ### Stationery Sets
-I wrote code that allowed for automated rendering of different arrangements of stationery sets. Cards and envelopes could be reordered, positioned and rotated in relation to each other, drop shadows could be customized, and sets could be rendered as flat or standing.
-<div class="inline-container"><img class="inline-image" src="/images/paperlesspost/multicard_layouts_1.jpg" alt="rotated layout" /><img class="inline-image" src="/images/paperlesspost/multicard_layouts_2.jpg" alt="rotated layout 2" /><img class="inline-image" src="/images/paperlesspost/multicard_layouts_3.jpg" alt="standing layout 2" /></div>
+I wrote code that allowed for automated rendering of different arrangements of stationery sets. Cards and envelopes could be reordered, positioned and rotated in relation to each other, drop shadows could be customized, and sets could be rendered as flat or standing.  
 
+![stationery sets](/images/paperlesspost/multicard_layouts_row.jpg)
 
 ### Envelope Content Editing
 I was responsible for all of the editable features of the envelope. The style of the text, the postmark, the stamp, envelope liner and envelope itself are all&nbscustomizable.
