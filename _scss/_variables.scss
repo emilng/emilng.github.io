@@ -4,7 +4,7 @@
 //
 
 // Colors
-$blue: #4183C4; 
+$blue: #4183C4;
 
 // Grays
 $black: #000;
@@ -22,7 +22,7 @@ $sourceSansPro: Source Sans Pro, sans-serif;
 
 // Mobile breakpoints
 @mixin mobile {
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 460px) {
     @content;
   }
 }

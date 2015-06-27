@@ -25,6 +25,7 @@ body {
   color: $darkGray;
   margin: 0;
   padding: 0;
+  min-width: 340px;
 }
 
 .column {
@@ -174,8 +175,8 @@ img {
   border-bottom: 1px solid $lightGray;
 
   @include mobile {
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
   }
 }
 
@@ -186,6 +187,10 @@ img {
   font-weight: bold;
   font-size: 30px;
   letter-spacing: 1px;
+
+  @include mobile {
+    text-align: center;
+  }
 }
 
 .site-description {
@@ -207,7 +212,7 @@ nav {
 
   @include mobile {
     margin-top: 9px;
-    font-size: 16px;
+    align-self: center;
   }
 
   a {
@@ -276,6 +281,16 @@ nav {
   color: red;
 }
 
+.inline-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.inline-image {
+  flex: 0 1 auto;
+}
+
 .project-container {
   display: flex;
   flex-direction: row;
@@ -290,16 +305,6 @@ nav {
   width: 80px;
 }
 
-.inline-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-}
-
-.inline-image {
-  flex: 0 1 auto;
-}
-
 .project-icon {
   border-radius: 5px;
   vertical-align: top;
@@ -309,19 +314,16 @@ nav {
 .project-text-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   font-family: $sourceSansPro;
-  display: inline-block;
   margin: 0 0 0 10px;
   width: 480px;
 }
 
 .project-title {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
   font-size: 18px;
   font-weight: bold;
+  flex: 1 0 auto;
 }
 
 .project-description {
@@ -333,6 +335,11 @@ nav {
   font-size: 12px;
   font-weight: normal;
   white-space: nowrap;
+  flex: 0 0 auto;
+  @include mobile {
+    font-size: 14px;
+    order: 3;
+  }
 }
 .project-links:before {
   content: "[";
