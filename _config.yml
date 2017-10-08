@@ -72,6 +72,8 @@ gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - octopress-autoprefixer # Automatically add CSS vendor prefixes to CSS and Sass files
 
+include: ['_showcase']
+
 # Exclude these files from your production _site
 exclude:
   - Gemfile
