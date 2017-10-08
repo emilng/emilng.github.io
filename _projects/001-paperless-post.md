@@ -1,6 +1,6 @@
 ---
 title: Paperless Post
-link: /showcase/paperlesspost.html
+link: /showcase/paperlesspost/
 icon: /images/paperless_post_icon.png
 site: http://www.paperlesspost.com
 tech: JavaScript, Flash, Ruby on Rails, PostgreSQL, SASS, React
